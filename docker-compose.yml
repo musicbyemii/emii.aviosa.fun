@@ -1,6 +1,0 @@
-services:
-  web:
-    build: .
-    ports:
-      - "31415:80"
-    restart: always
