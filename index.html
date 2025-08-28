@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Emii | Full-Stack Developer & Creator of Aviosa</title>
+
+    <meta name="description" content="Hey, I'm Emii! A 15-year-old romanian full-stack developer & the creator of AI-powered roleplay website Aviosa.fun.">
+    <meta name="keywords" content="Emii, full-stack developer, web developer Romania, music producer, Aviosa, AI roleplay platform, Node.js developer, MongoDB developer, FL Studio producer, creative developer, Romanian programmer">
+
+    <meta property="og:title" content="Emii | Full-Stack Developer & Music Producer">
+    <meta property="og:description" content="Hey, I'm Emii! A 15-year-old romanian web developer & music producer. Creator of Aviosa.fun, an ad-free AI-powered roleplay platform.">
+    <meta property="og:image" content="https://emii.aviosa.fun/emii.jpg">
+    <meta property="og:url" content="https://emii.aviosa.fun">
+    <meta property="og:type" content="website">
+
+    <link rel="icon" type="image/x-icon" href="/favicon.ico">
+
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="./app.css" />
+</head>
+<body>
+    <div class="container">
+        <header class="header">
+            <div class="profile-section">
+                <div class="profile-image">
+                    <img src="./emii.jpg" alt="Emii">
+                    <div class="online-indicator"></div>
+                </div>
+                <div class="info">
+                    <h1 class="name">Emii</h1>
+                    <p class="title desktop-only">Full-Stack Developer & Music Producer</p>
+                    <p class="title mobile-only">Full-Stack Developer<br/>Music Producer</p>
+                    <p class="location">
+                        <i class="fas fa-map-marker-alt"></i>
+                        Romania
+                    </p>
+                </div>
+            </div>
+            <div class="stats my-time">
+                <span class="stat-number" id="currentTime"></span>
+                <span class="stat-label">My Time</span>
+            </div>
+        </header>
+
+        <div class="cards-grid">
+            <div class="card">
+                <div class="card-header">
+                    <div class="card-icon">
+                        <i class="fas fa-code"></i>
+                    </div>
+                    <h2 class="card-title">My Tech</h2>
+                </div>
+                <div class="card-content">
+                    <div class="tech-grid">
+                        <div class="tech-item">Node.js</div>
+                        <div class="tech-item">Express</div>
+                        <div class="tech-item">MongoDB</div>
+                        <div class="tech-item">EJS</div>
+                        <div class="tech-item">FL Studio</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="card-header">
+                    <div class="card-icon">
+                        <i class="fas fa-birthday-cake"></i>
+                    </div>
+                    <h2 class="card-title">I've been alive for</h2>
+                </div>
+                <div class="card-content">
+                    <div class="age-display" id="ageDisplay"></div>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="card-header">
+                    <div class="card-icon">
+                        <img src="./aviosa.png" class="aviosa-logo" />
+                    </div>
+                    <h2 class="card-title">My project</h2>
+                </div>
+                <div class="card-content">
+                    <b>Aviosa.fun</b>
+                    <p>A completely free, ad-less, donation-based website for AI-powered roleplay.</p>
+                    <div class="project-details">
+                        <div class="project-stats">
+                            <div class="stat">
+                                <span class="stat-number">1.5k</span>
+                                <span class="stat-label">Users</span>
+                            </div>
+                            <div class="stat">
+                                <span class="stat-number">50k+</span>
+                                <span class="stat-label">Messages</span>
+                            </div>
+                            <div class="stat">
+                                <span class="stat-number">Aug 12</span>
+                                <span class="stat-label">Launched</span>
+                            </div>
+                        </div>
+                        <a href="https://aviosa.fun/discord" class="discord-btn" target="_blank">
+                            <i class="fab fa-discord"></i>
+                            Join Discord
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card language-card">
+                <div class="card-header">
+                    <div class="card-icon">
+                        <i class="fas fa-language"></i>
+                    </div>
+                    <h2 class="card-title">Languages</h2>
+                </div>
+                <div class="card-content">
+                    <div class="languages-grid">
+                        <div class="language-item fluent">
+                            <span class="language-name">English</span>
+                            <span class="language-level">Fluent</span>
+                        </div>
+                        <div class="language-item fluent">
+                            <span class="language-name">Romanian</span>
+                            <span class="language-level">Native</span>
+                        </div>
+                        <div class="language-item learning">
+                            <span class="language-name">Japanese</span>
+                            <span class="language-level">Learning</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card music-card">
+                <div class="card-header">
+                    <div class="card-icon">
+                        <i class="fas fa-music"></i>
+                    </div>
+                    <h2 class="card-title">Favorite Artists</h2>
+                </div>
+                <div class="card-content">
+                    <p>These are the artists that I listen to the most when I code :)</p>
+                    <div class="artists-section">
+                        <div class="artists-grid">
+                            <div class="artist-card" data-artist="Bvcovia">
+                                <div class="artist-image">
+                                    <img src="https://images.genius.com/93657a681e51c9fdb9ee06fb97da8c97.977x977x1.jpg" alt="Bvcovia">
+                                </div>
+                                <div class="artist-name">Bvcovia</div>
+                                <div class="artist-genre">Trap</div>
+                            </div>
+                            <div class="artist-card" data-artist="Marko Glass">
+                                <div class="artist-image">
+                                    <img src="https://images.genius.com/3ac03ca79edce5baac5bf87367254271.1000x1000x1.png" alt="Marko Glass">
+                                </div>
+                                <div class="artist-name">Marko Glass</div>
+                                <div class="artist-genre">Trap</div>
+                            </div>
+                            <div class="artist-card" data-artist="Albert NBN">
+                                <div class="artist-image">
+                                    <img src="https://i.scdn.co/image/ab6761610000e5eb0095ebe227edf64b16b27768" alt="Albert NBN">
+                                </div>
+                                <div class="artist-name">Albert NBN</div>
+                                <div class="artist-genre">Trap</div>
+                            </div>
+                            <div class="artist-card" data-artist="Erika Isac">
+                                <div class="artist-image">
+                                    <img src="https://yt3.googleusercontent.com/Aran_6KjadiNFod_SURJQLz6-35boWmQJio-vuv6_le7VN7tscozk4b5WMjP28w8ettikuZFsg=s900-c-k-c0x00ffffff-no-rj" alt="Erika Isac">
+                                </div>
+                                <div class="artist-name">Erika Isac</div>
+                                <div class="artist-genre">Pop/Trap</div>
+                            </div>
+                            <div class="artist-card" data-artist="RAVA">
+                                <div class="artist-image">
+                                    <img src="https://viberate-upload.ams3.cdn.digitaloceanspaces.com/prod/entity/artist/rava-pruVx" alt="RAVA">
+                                </div>
+                                <div class="artist-name">RAVA</div>
+                                <div class="artist-genre">Trap</div>
+                            </div>
+                            <div class="artist-card" data-artist="Gheboasă">
+                                <div class="artist-image">
+                                    <img src="https://i.scdn.co/image/ab6761610000e5eb6f6e222b99a9337eb1ac2353" alt="Gheboasa">
+                                </div>
+                                <div class="artist-name">Gheboasă</div>
+                                <div class="artist-genre">Trap/Manele</div>
+                            </div>
+                            <div class="artist-card" data-artist="Lil Cagulă">
+                                <div class="artist-image">
+                                    <img src="https://images.genius.com/75b6f61058e86c7bdcd60f8a0cacc1e7.597x597x1.png" alt="Lil Cagula">
+                                </div>
+                                <div class="artist-name">Lil Cagulă</div>
+                                <div class="artist-genre">Trap</div>
+                            </div>
+                            <div class="artist-card" data-artist="Rareș">
+                                <div class="artist-image">
+                                    <img src="https://i.scdn.co/image/ab6761610000517420ef18eca215a17ee7fc7e2a" alt="Rares">
+                                </div>
+                                <div class="artist-name">Rareș</div>
+                                <div class="artist-genre">Pop/Manele</div>
+                            </div>
+                            <div class="artist-card" data-artist="IDK">
+                                <div class="artist-image">
+                                    <img src="https://virginradio.ro/wp-content/uploads/2022/10/01.-cover-streaming-scaled-e1666174595904.jpg" alt="IDK">
+                                </div>
+                                <div class="artist-name">IDK</div>
+                                <div class="artist-genre">Trap</div>
+                            </div>
+                            <div class="artist-card" data-artist="Alex Velea">
+                                <div class="artist-image">
+                                    <img src="https://www.fanatik.ro/wp-content/uploads/2023/04/33372590613686015506410355036234157605018976n-e1680966116526.jpg" alt="Alex Velea">
+                                </div>
+                                <div class="artist-name">Alex Velea</div>
+                                <div class="artist-genre">Trapanele</div>
+                            </div>
+                            <div class="artist-card" data-artist="Petre Ștefan">
+                                <div class="artist-image">
+                                    <img src="https://i.scdn.co/image/ab6761610000e5eba6e075b7b5c24b9a85b44b14" alt="Petre Stefan">
+                                </div>
+                                <div class="artist-name">Petre Ștefan</div>
+                                <div class="artist-genre">Trap</div>
+                            </div>
+                            <div class="artist-card" data-artist="M.G.L.">
+                                <div class="artist-image">
+                                    <img src="https://i.scdn.co/image/ab6761610000517487b737ed99390ac75ecd8dd9" alt="MGL">
+                                </div>
+                                <div class="artist-name">M.G.L.</div>
+                                <div class="artist-genre">Trap</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+<script src="./script.js"></script>
+</body>
+</html>
